@@ -35,23 +35,3 @@
         </a>
     </div>
 </div>
-    <div class="user-profile">
-        <div style="display: flex; align-items: center; gap: 10px; padding: 0 20px 10px 20px;">
-            <?php if(!empty($_SESSION['foto_profil'])): ?>
-                <img src="uploads/<?= $_SESSION['foto_profil'] ?>" style="width: 35px; height: 35px; border-radius: 50%; object-fit: cover;">
-            <?php else: ?>
-                <i class="fas fa-user-circle" style="font-size: 35px;"></i>
-            <?php endif; ?>
-            
-            <div>
-                <span style="font-size: 14px; font-weight: 600; display: block; color: white;">
-                    <?= htmlspecialchars($_SESSION['nama_lengkap'] ?? 'Admin'); ?>
-                </span>
-                <span style="font-size: 12px; color: #cbd5e1;">Administrator</span>
-            </div>
-        </div>
-        <a href="logout.php" onclick="return confirm('Apakah Anda yakin ingin logout?')" class="logout-btn" style="color: #ef4444; font-weight: 600; text-align: center;">
-            <i class="fas fa-sign-out-alt"></i> Logout
-        </a>
-    </div>
-</div>

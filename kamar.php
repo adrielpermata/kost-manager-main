@@ -186,12 +186,19 @@ while ($kamar = mysqli_fetch_assoc($query)) {
  <?php include 'includes/sidebar.php'; ?>
 
     <div class="main-wrapper">
-        
+        <header class="header">
+            <div class="header-left">
+                <h2 style="margin:0; font-size: 18px; color: #1e293b;">Manajemen Kamar</h2>
+            </div>
+            <div class="header-right" style="display: flex; align-items: center; gap: 20px;">
+                <div style="color: #64748b; font-size: 14px;"><i class="far fa-calendar-alt"></i> <?= date('d M Y') ?></div>
+            </div>
+        </header>
         <?php 
-if (file_exists('includes/header.php')) {
-    include_once('includes/header.php');
-}
-?>
+        if (file_exists('includes/header.php')) {
+            include_once('includes/header.php');
+        }
+        ?>
 
         <main class="main-content">
             <div class="data-section">
@@ -262,12 +269,9 @@ if (file_exists('includes/header.php')) {
                 </div>
             </div>
         </main>
-
-        <footer class="footer">
-            &copy; <?= date('Y'); ?> <strong>KostManager</strong>. Sistem Manajemen Kost.
-        </footer>
+        <?php include 'includes/footer.php'; ?>
     </div>
-
+        
     <div id="modalTambahKamar" class="modal">
         <div class="modal-content" style="max-width: 600px;">
             <h2 style="margin-top:0; margin-bottom: 20px;">Tambah Kamar Baru</h2>

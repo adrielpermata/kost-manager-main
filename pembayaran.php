@@ -92,7 +92,7 @@ $result = mysqli_query($conn, $sql);
         
         <header class="header">
             <div class="header-left">
-                <h2 style="margin: 0; font-size: 18px; color: #1e293b;">Manajemen Transaksi</h2>
+                <h2 style="margin: 0; font-size: 18px; color: #1e293b;">Manajemen Pembayaran</h2>
             </div>
             <div class="header-right">
                 <span style="color: #64748b; font-size: 14px;"><i class="far fa-calendar-alt"></i> <?= date('d M Y') ?></span>

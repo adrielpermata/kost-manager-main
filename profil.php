@@ -122,6 +122,7 @@ if (isset($_POST['update_profil'])) {
         .sidebar { width: var(--sidebar-width); background: var(--primary-dark) !important; color: white; position: fixed; height: 100vh; display: flex; flex-direction: column; justify-content: space-between; z-index: 1000; top: 0; left: 0; }
         .main-wrapper { flex: 1; margin-left: var(--sidebar-width); display: flex; flex-direction: column; min-height: 100vh; }
         .header { height: var(--navbar-height); background: white; padding: 0 30px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 4px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 999; }
+        .footer { background: white; padding: 20px 30px; text-align: center; border-top: 1px solid #e2e8f0; color: #64748b; font-size: 14px; margin-top: auto; }
 
         .main-content { padding: 30px; flex: 1; display: flex; justify-content: center; }
 
@@ -158,7 +159,7 @@ if (isset($_POST['update_profil'])) {
                 <span style="color: #64748b; font-size: 14px;"><i class="far fa-calendar-alt"></i> <?= date('d M Y') ?></span>
             </div>
         </header>
-
+        
         <main class="main-content">
             <div class="profile-card">
 
@@ -217,7 +218,6 @@ if (isset($_POST['update_profil'])) {
                 </form>
             </div>
         </main>
-
         <?php
             if ($role == 'admin') { include 'includes/footer.php'; }
             else { include 'includes/user_footer.php'; }

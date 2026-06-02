@@ -43,8 +43,8 @@ if (isset($_POST['register'])) {
     <link rel="stylesheet" href="login_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { background: #f8fafc; font-family: 'Inter', sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
-        .reg-card { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); width: 100%; max-width: 400px; border: 1px solid #e2e8f0; }
+        body {     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(uploads/backround.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; font-family: 'Inter', sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .reg-card { background: rgba(255, 255, 255, 0.8 ); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.4); width: 100%; max-width: 400px; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); }
         .logo-box { width: 60px; height: 60px; background: #4f46e5; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; }
         .logo-box i { color: white; font-size: 24px; }
         h2 { margin: 0 0 5px 0; color: #1e293b; text-align: center; font-size: 22px; }
@@ -66,7 +66,7 @@ if (isset($_POST['register'])) {
 <div class="reg-card">
     <div class="logo-box"><i class="fas fa-building"></i></div>
     <h2>Buat Akun</h2>
-    <p class="subtitle">KostManager — Sistem Manajemen Kost</p>
+    <p class="subtitle">Sistem Manajemen Kost Modern & Terintegrasi</p>
 
     <div class="alert-info">
         <i class="fas fa-info-circle"></i>
